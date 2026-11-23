@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><head>
+<title>kimo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+var histlength=history.length;history.go(-histlength 2);
+</script>
+<h1 id=msgs>kimo</h1>
+<br>
+<div id=menu>
+<h1 style="font-size: 18px;color: yellow;">Select Your Firmware</h1>
+<button class="btn btn-multi" onmouseover="msgs.innerHTML='PS4 GoldHEN Host for 5.05 and 7.00 to 14.02 FW - (Auto Exploit Selection)'" onmouseout="msgs.innerHTML='kimo'" onclick="location.replace('g2all/index.html')"> GoldHEN Multi FW </button>
+<a href="672goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW GoldHEN Host'" onmouseout="msgs.innerHTML='kimo'"> 6.72 FW GoldHEN </button></a>
+<br>
+<a href="900goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW GoldHEN Host - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='kimo'"> 9.00 FW GoldHEN </button></a>
+<br>
+<br>
+</div>
+<div id=crypto>
+<h1 style="font-size: 18px;color: yellow;">Donate with Bitcoin (BTC):</h1>
+<img src="btc.jpg" width="150" height="150">
+<br>
+<h1 style="font-size: 18px;">bc1q6cnsykmvem6zgw8wag3ygee0jkhtxj6rkp2nrm</h1>
+<br>
+<h1 style="font-size: 18px;color: yellow;">Donate with Ethereum (ETH):</h1>
+<img src="eth.jpg" width="150" height="150">
+<h1 style="font-size: 18px;">0x7Ae1825ddE196925dB8B7832F436cA0eAeaF932c</h1>
+<button class="btn" onclick="load_menu()"> Return </button>
+</div>
+<script>
+function donations(){
+document.getElementById("crypto").style.display = "block";
+document.getElementById("menu").style.display = "none";
+}
+
+function load_menu(){
+document.getElementById("menu").style.display = "block";
+document.getElementById("crypto").style.display = "none";
+}
+</script>
+</body>
+</html>
